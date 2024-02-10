@@ -1,0 +1,56 @@
+[core]
+  excludesfile = ~/.gitconfig
+  pager = delta
+  editor = nvim
+  ignorecase = false
+  autocrlf = input
+[include]
+  path = ~/themes.gitconfig
+[init]
+  defaultBranch = main
+[merge]
+  conflictstyle = diff3
+[interactive]
+  diffFilter = delta --color-only --features=interactive
+[delta]
+  features = arctic-fox
+  light = false
+  side-by-side = true
+  line-numbers = true
+[delta "interactive"]
+  keep-plus-minus-markers = false
+[delta "decorations"]
+  commit-decoration-style = blue ol
+  commit-style = raw
+  file-style = omit
+  hunk-header-decoration-style = blue box
+  hunk-header-file-style = red
+  hunk-header-line-number-style = "#067a00"
+  hunk-header-style = file line-number syntax
+[push]
+  default = simple
+[color]
+  status = auto
+  branch = auto
+  grep = auto
+  ui = auto
+[hub]
+  protocol = https
+[diff]
+  tool = nvimdiff
+  colorMoved = default
+[difftool "nvimdiff"]
+  cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "nvimdiff"]
+    cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[user]
+  name = Abhigyan Madhukalya
+  email = amadhukalya2005@gmail.com
+[credential "https://github.com"]
+  helper = 
+  helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+  helper = 
+  helper = !/usr/bin/gh auth git-credential

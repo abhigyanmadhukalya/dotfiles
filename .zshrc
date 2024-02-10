@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/alias.sh
 source ~/.config/zsh/func.sh
 
-HISTFILE=~/.config/zsh/.zsh_history
+HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory

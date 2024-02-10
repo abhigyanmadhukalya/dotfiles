@@ -6,8 +6,9 @@ if wezterm.config_builder then
 end
 
 -- Fonts
-config.font = wezterm.font({
-	family = "JetBrains Mono",
+config.font = wezterm.font_with_fallback({
+	"JetBrains Mono Nerd Font",
+	"FiraCode",
 })
 config.font_size = 13.7
 

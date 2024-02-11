@@ -10,7 +10,7 @@ export mysql_password="$(pass show db/mysql-password)"
 
 ZSH_THEME=""
 
-plugins=(git nvm pip ripgrep tmux pass firewalld rsync zsh-syntax-highlighting zsh-autosuggestions golang)
+plugins=(git nvm pip ripgrep tmux pass firewalld rsync zsh-syntax-highlighting zsh-autosuggestions golang enhancd)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/alias.sh

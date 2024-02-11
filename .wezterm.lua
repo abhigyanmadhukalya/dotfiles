@@ -21,6 +21,7 @@ config.initial_rows = 35
 config.adjust_window_size_when_changing_font_size = false
 config.enable_tab_bar = false
 config.enable_wayland = true
+config.window_background_opacity = 1.0
 
 config.hide_mouse_cursor_when_typing = true
 config.use_dead_keys = false

@@ -11,3 +11,4 @@ alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/nvidia
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 alias mysql="mysql -u $(pass show db/mysql-username) -p$(pass show db/mysql-password)"
 alias weather="curl v2.wttr.in/Guwahati"
+alias cd="__enhancd::cd"

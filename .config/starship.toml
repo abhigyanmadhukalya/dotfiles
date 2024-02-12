@@ -69,7 +69,7 @@ mantle = "#181825"
 crust = "#11111b"
 
 [os]
-disabled = false
+disabled = true
 style = "bg:surface0 fg:text"
 
 [os.symbols]

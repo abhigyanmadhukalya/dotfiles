@@ -36,6 +36,8 @@
   ui = auto
 [hub]
   protocol = https
+[https]
+  postBuffer = 1048576000
 [diff]
   tool = nvimdiff
   colorMoved = default
@@ -54,3 +56,5 @@
 [credential "https://gist.github.com"]
   helper = 
   helper = !/usr/bin/gh auth git-credential
+[safe]
+	directory = /home/abhigyanmadhukalya/code/dunst

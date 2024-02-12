@@ -5,9 +5,6 @@ export PATH=/home/abhigyanmadhukalya/.local/share/:$PATH
 export PATH=/home/abhigyanmadhukalya/go/bin/:$PATH
 export EDITOR="nvim"
 
-export mysql_username="$(pass show db/mysql-username)"
-export mysql_password="$(pass show db/mysql-password)"
-
 ZSH_THEME=""
 
 plugins=(git nvm pip ripgrep tmux pass firewalld rsync zsh-syntax-highlighting zsh-autosuggestions golang enhancd)

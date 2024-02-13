@@ -1,8 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-export PATH=/home/abhigyanmadhukalya/.local/bin/:$PATH
-export PATH=/home/abhigyanmadhukalya/.local/share/:$PATH
-export PATH=/home/abhigyanmadhukalya/go/bin/:$PATH
+export PATH=$HOME/.local/bin/:$PATH
+export PATH=$HOME/.local/share/:$PATH
+export PATH=$HOME/go/bin/:$PATH
 export EDITOR="nvim"
 
 ZSH_THEME=""
@@ -28,3 +28,5 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:/usr/local/go/bin
+
+export PATH=$PATH:/home/abhigyan/.spicetify

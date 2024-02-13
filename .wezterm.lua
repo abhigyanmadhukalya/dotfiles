@@ -8,7 +8,8 @@ end
 -- Fonts
 config.font = wezterm.font_with_fallback({
 	"JetBrains Mono Nerd Font",
-	"FiraCode",
+	"FiraCode Nerd Font",
+	"Hack Nerd Font",
 })
 config.font_size = 13.7
 

@@ -13,3 +13,7 @@ export PASSWORD_STORE_EXTENSIONS_DIR="$(python -m site --user-site)/usr/lib/pass
 
 export ENHANCD_FILTER="fzf --preview='eza --tree --group-directories-first --git-ignore --level 1 {}'"
 export GTK_THEME='Catppuccin-Frappe-Standard-Lavender-dark:dark'
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx

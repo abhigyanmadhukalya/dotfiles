@@ -51,7 +51,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 0.4em;
   background-color: transparent;
   color: #ffffff;
 }
@@ -110,7 +110,8 @@ button:hover {
 }
 
 #clock {
-  background-color: #64727D;
+  background-color: #BBCCDD;
+  color: #000000;
 }
 
 #battery {

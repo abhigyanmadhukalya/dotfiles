@@ -17,3 +17,4 @@ export GTK_THEME='Catppuccin-Frappe-Standard-Lavender-dark:dark'
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+export PATH=$HOME/.config/rofi/scripts:$PATH

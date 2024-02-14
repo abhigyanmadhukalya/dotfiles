@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: JetBrains Mono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -84,14 +86,20 @@ button:hover {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpd,
+#custom-power {
   padding: 0 10px;
   color: #ffffff;
+}
+
+#custom-power {
+  background: #f38ba8;
+  color: black;
+  font-size: 15px;
 }
 
 #window,
@@ -213,7 +221,7 @@ label:focus {
 }
 
 #tray {
-  background-color: #2980b9;
+  background-color: #2d3436;
 }
 
 #tray>.passive {

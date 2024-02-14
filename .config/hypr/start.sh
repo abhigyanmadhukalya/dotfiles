@@ -1,14 +1,18 @@
+#!/usr/bin/bash
+
 # Wallpaper
-swww init &
-swww img ~/Pictures/1dead40c8d7b8ffa15de10120c8cd451.jpg &
+hyprpaper &
 
 # Applets
 nm-applet --indicator &
 blueman-applet &
+firewall-applet &
+kdeconnect-indicator &
 
 # Status Bar
 waybar &
+dunst &
 
-hyprpm reload -n &
+hyprpm reload &
 /usr/lib/polkit-kde-authentication-agent-1 &
 rog-control-center &

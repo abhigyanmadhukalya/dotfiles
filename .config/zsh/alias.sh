@@ -1,7 +1,7 @@
 alias vim="nvim"
 alias ls="eza --long --header --git --all --icons=always"
 alias ll="eza -l -h --icons=always"
-alias cat="bat"
+alias cat="bat --theme="Catppuccin-mocha""
 # alias curl="curlie"
 alias sudo="doas"
 alias sudoedit="doasedit"

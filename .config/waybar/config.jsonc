@@ -5,10 +5,9 @@
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "custom/media",
+    "custom/power",
     "keyboard-state",
-    "pulseaudio",
-    "privacy"
+    "pulseaudio"
   ],
   "modules-center": [
     "hyprland/workspaces",
@@ -50,7 +49,7 @@
   },
   "clock": {
     "format": "{:%H:%M}  ",
-    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "format-alt": "{:%A, %B %d, %Y (%R)}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
@@ -85,7 +84,7 @@
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
-    // "format-critical": "{temperatureC}°C {icon}",
+    "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": [
       ""
@@ -148,8 +147,6 @@
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
       "phone": "",
       "portable": "",
       "car": "",
@@ -161,38 +158,9 @@
     },
     "on-click": "pavucontrol"
   },
-  "custom/media": {
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-  },
-  "privacy": {
-    "icon-spacing": 4,
-    "icon-size": 18,
-    "transition-duration": 250,
-    "modules": [
-      {
-        "type": "screenshare",
-        "tooltip": true,
-        "tooltip-icon-size": 24
-      },
-      {
-        "type": "audio-out",
-        "tooltip": true,
-        "tooltip-icon-size": 24
-      },
-      {
-        "type": "audio-in",
-        "tooltip": true,
-        "tooltip-icon-size": 24
-      }
-    ]
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout &",
+    "format": "力"
   }
 }

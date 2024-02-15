@@ -6,12 +6,11 @@
   // Choose the order of the modules
   "modules-left": [
     "custom/power",
-    "keyboard-state",
-    "pulseaudio"
+    "pulseaudio",
+    "clock"
   ],
   "modules-center": [
-    "hyprland/workspaces",
-    "clock"
+    "hyprland/workspaces"
   ],
   "modules-right": [
     "cpu",
@@ -23,20 +22,11 @@
     "tray"
   ],
   // Modules configuration
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": ""
-    }
-  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name}",
+    "format": "{icon}",
     "format-icons": {
       "urgent": "",
       "focused": "",

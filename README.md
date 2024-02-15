@@ -3,7 +3,7 @@
 > [!NOTE]
 > Don’t blindly use my settings unless you know what that entails. Use at your own risk.
 
-**I use Fedora 39 as my OS.**
+**I use EndeavourOS (I don't really want to go through the hassle of installing Arch) as my OS.**
 
 > This repo is managed using GNU Stow. Install it using your package manager to make symlinks to the files without actually coping any of them.
 

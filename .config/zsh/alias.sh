@@ -11,3 +11,4 @@ alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/nvidia
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 alias weather="curl v2.wttr.in/Guwahati"
 alias cd="z"
+alias glp="git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'"

@@ -16,3 +16,4 @@ dunst &
 hyprpm reload &
 /usr/lib/polkit-kde-authentication-agent-1 &
 rog-control-center &
+/opt/safing/portmaster/portmaster-start notifier --data=/opt/safing/portmaster &

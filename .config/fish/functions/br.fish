@@ -1,0 +1,1 @@
+/home/abhigyan/.local/share/broot/launcher/fish/br.fish

@@ -1,0 +1,27 @@
+# UI options
+set mouse
+set drawbox true
+set icons
+set nohidden
+set info size
+# set a large offset to center the cursor
+set scrolloff 99
+set errorfmt "\033[31m%s\033[0m"
+set sixel true
+
+# pass arguments with delimiter '\n'
+set ifs "\n"
+set filesep "\n"
+set previewer pv
+
+# key mapping
+map <esc> cmd-escape
+map gh cd ~
+map gr cd /
+map D delete
+map zp set preview!
+# shell mappings
+map <enter> $open $fx
+map e $$EDITOR $fx
+map M push $mkdir<space>
+map t $tig -C $PWD

@@ -11,10 +11,12 @@ export NVM_DIR=${NVM_DIR:="$XDG_CONFIG_HOME/nvm"}
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 export PASSWORD_STORE_EXTENSIONS_DIR="$(python -m site --user-site)/usr/lib/password-store/extensions/"
 
-export ENHANCD_FILTER="fzf --preview='eza --tree --group-directories-first --git-ignore --level 1 {}'"
 export GTK_THEME='Catppuccin-Frappe-Standard-Lavender-dark:dark'
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export PATH=$HOME/.config/rofi/scripts:$PATH
+export BAT_THEME="Catppuccin-mocha"
+
+export PF_INFO="ascii title os host kernel shell uptime pkgs memory"

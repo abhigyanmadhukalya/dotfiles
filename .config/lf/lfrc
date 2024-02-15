@@ -12,7 +12,12 @@ set sixel true
 # pass arguments with delimiter '\n'
 set ifs "\n"
 set filesep "\n"
-set previewer pv
+set previewer ~/.local/bin/pv
+
+# eza integration
+cmd on-select &{{
+    lf -remote "send $id set statfmt \"$(eza -ld --color=always "$f")\""
+}}
 
 # key mapping
 map <esc> cmd-escape

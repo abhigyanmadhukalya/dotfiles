@@ -50,6 +50,8 @@ button:hover {
   box-shadow: inset 0 -3px #ffffff;
 }
 
+/*************************************************/
+
 #workspaces {
   background: #313244;
   margin: 2px 1px 3px 1px;
@@ -90,6 +92,8 @@ button:hover {
   opacity: 0.3;
 }
 
+/*************************************************/
+
 #mode {
   background-color: #64727D;
   border-bottom: 3px solid #ffffff;
@@ -110,15 +114,26 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd,
-#custom-power {
+#custom-power,
+#custom-weather {
   padding: 0 10px;
   color: #ffffff;
 }
 
+#disk {
+  background: #f2cdcd;
+  color: #1e1e2e;
+}
+
 #custom-power {
-  background: #f38ba8;
+  background: #f5c2e7;
   color: black;
   font-size: 15px;
+}
+
+#custom-weather {
+  background: #f2cdcd;
+  color: #1e1e2e;
 }
 
 #window,
@@ -189,21 +204,23 @@ label:focus {
 }
 
 #network {
-  background-color: #2980b9;
+  background-color: #89dceb;
+  color: #1e1e2e;
 }
 
 #network.disconnected {
-  background-color: #f53c3c;
+  background-color: #f38ba8;
+  color: #1e1e2e;
 }
 
 #pulseaudio {
   background-color: #f9e2af;
-  color: #000000;
+  color: #1e1e2e;
 }
 
 #pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #2a5c45;
+  background-color: #f2cdcd;
+  color: #1e1e2e;
 }
 
 #wireplumber {
@@ -235,7 +252,8 @@ label:focus {
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
+  background-color: #f38ba8;
+  color: #1e1e2e;
 }
 
 #tray {

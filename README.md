@@ -18,13 +18,13 @@
 
 ## Neovim
 
-![nvim](./images/nvim.png)
+![nvim](./images/nvim-new.png)
 
 I currently use [LazyVim](https://lazyvim.org) as a base for my Neovim config and followed a guide from [@craftzdog](https://github.com/craftzdog) to make it more personalised for me,
 
 ## Zsh Shell
 
-![zsh](./images/zsh.png)
+![zsh](./images/zsh-new.png)
 
 I have switched from Fish to Zsh as it is POSIX compliant and I never run into
 any issues while dealing with shell scripts. All the features that were present

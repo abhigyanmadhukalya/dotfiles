@@ -6,14 +6,16 @@ hyprpaper &
 # Applets
 nm-applet --indicator &
 blueman-applet &
-firewall-applet &
-kdeconnect-indicator &
+
+fcitx5 &
+
+gnome-keyring-daemon --start --components=secrets &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Status Bar
 waybar &
-dunst &
+swaync &
 
 hyprpm reload &
-/usr/lib/polkit-kde-authentication-agent-1 &
 rog-control-center &
 /opt/safing/portmaster/portmaster-start notifier --data=/opt/safing/portmaster &

@@ -7,7 +7,7 @@ a | ace | alz | apk | arc | arj | bz | bz2 | cab | cpio | deb | gz | iso | jar |
 	bsdtar --list --file "$1"
 	exit
 	;;
-md | py | js | go | c | cpp | rs | sh)
+md | py | js | go | c | cpp | rs | sh | json | csv)
 	bat --paging=never --style=numbers --terminal-width $(($2 - 5)) -f "$1"
 	;;
 rar)
@@ -58,7 +58,7 @@ esac
 # Handle by mime types
 case "$(file -Lb --mime-type -- "$1")" in
 # Text
-text/* | */xml | */csv | */json)
+text/* | */xml)
 	# try to detect the charactor encodeing
 	enc=$(head -n20 "$1" | uchardet)
 	head -n 100 "$1" |

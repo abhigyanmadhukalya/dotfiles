@@ -41,8 +41,8 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%R %p}",
-    "format-alt": "{:%I:%M 󰃭 %d·%m·%y}",
+    "format": "{:%R}",
+    "format-alt": "{:%I:%M %p 󰃭 %d·%m·%y}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
@@ -183,14 +183,6 @@
     "tooltip": false,
     "on-click": "wlogout &",
     "format": "力"
-  },
-  "custom/weather": {
-    "return-type": "json",
-    "exec": "~/.config/waybar/scripts/weather",
-    "format": "{}",
-    "tooltip": false,
-    "interval": 3600,
-    "signal": 8
   },
   "disk": {
     "interval": 30,

@@ -16,6 +16,9 @@ return {
         "bash",
         "toml",
       },
+      indent = {
+        enabled = true,
+      },
     },
   },
 }

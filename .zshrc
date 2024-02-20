@@ -3,6 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/.local/bin/:$PATH
 export PATH=$HOME/.local/share/:$PATH
 export PATH=$HOME/go/bin/:$PATH
+export PATH=$HOME/.config/emacs/bin/:$PATH
 export EDITOR="nvim"
 
 ZSH_THEME=""

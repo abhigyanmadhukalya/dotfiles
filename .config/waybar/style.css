@@ -134,8 +134,10 @@ tooltip {
 }
 
 #custom-weather {
-  background: #f2cdcd;
+  background: #f9e2af;
   color: #1e1e2e;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #window,

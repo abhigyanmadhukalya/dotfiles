@@ -8,7 +8,7 @@ export EDITOR="nvim"
 
 ZSH_THEME=""
 
-plugins=(git nvm pip ripgrep tmux pass firewalld rsync zsh-syntax-highlighting zsh-autosuggestions golang enhancd)
+plugins=(git nvm pip ripgrep tmux pass firewalld rsync zsh-syntax-highlighting zsh-autosuggestions golang)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/alias.sh

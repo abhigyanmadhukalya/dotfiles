@@ -6,3 +6,6 @@ vim.cmd([[let &t_Cs = "\e[4:3m]"]])
 vim.cmd([[let &t_Cs = "\e[4:0m]"]])
 
 vim.opt.shiftwidth = 2
+
+vim.o.pumblend = 0
+vim.o.winblend = 0

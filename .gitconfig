@@ -48,8 +48,8 @@
     cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
 [user]
-  name = Abhigyan Madhukalya
-  email = amadhukalya2005@gmail.com
+	name = Abhigyan Madhukalya
+	email = 20404386-abhigyanmadhukalya@users.noreply.gitlab.com
 [credential "https://github.com"]
   helper = 
   helper = !/usr/bin/gh auth git-credential

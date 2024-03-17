@@ -14,7 +14,7 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 13.7
 
 -- Color scheme
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = 'Gruvbox dark, medium (base16)'
 
 -- Window
 config.initial_cols = 150

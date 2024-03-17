@@ -22,7 +22,7 @@ config.initial_rows = 35
 config.adjust_window_size_when_changing_font_size = false
 config.enable_tab_bar = false
 config.enable_wayland = true
-config.window_background_opacity = 0.7
+-- config.window_background_opacity = 0.7
 -- config.window_decorations = "NONE"
 
 config.hide_mouse_cursor_when_typing = true

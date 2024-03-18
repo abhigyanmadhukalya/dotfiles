@@ -1,9 +1,7 @@
 return {
 	{
 		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
+		opts = {},
 	},
 	{
 		"ellisonleao/gruvbox.nvim",
@@ -20,15 +18,14 @@ return {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
-		config = function()
-			require("lualine").setup({
-				icons_enabled = true,
-				theme = "gruvbox",
-			})
-		end,
+		opts = {
+			icons_enabled = true,
+			theme = "gruvbox",
+		},
 	},
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig",
+	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	"neovim/nvim-lspconfig",
 	{
 		"hrsh7th/nvim-cmp",
@@ -57,9 +54,7 @@ return {
 	},
 	{
 		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup()
-		end,
+		opts = {},
 	},
 	{
 		"folke/which-key.nvim",
@@ -92,8 +87,6 @@ return {
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		config = true,
-		-- use opts = {} for passing setup options
-		-- this is equalent to setup({}) function
 	},
 	{
 		"goolord/alpha-nvim",
@@ -101,12 +94,26 @@ return {
 	},
 	{
 		"nvimdev/lspsaga.nvim",
-		config = function()
-			require("lspsaga").setup({})
-		end,
+		opts = {},
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
 		},
+	},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		opts = {},
+	},
+	{
+		"folke/todo-comments.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		opts = { signs = false },
+	},
+	{
+		"j-hui/fidget.nvim",
+		opts = {},
 	},
 }

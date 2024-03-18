@@ -35,6 +35,16 @@ require("mason-lspconfig").setup({
 	},
 })
 
+require("mason-tool-installer").setup({
+	ensure_installed = {
+		"stylua",
+		"black",
+	},
+	run_on_start = true,
+	start_delay = 300,
+	debounce_hours = 5,
+})
+
 require("mason-lspconfig").setup_handlers({
 
 	function(server_name)

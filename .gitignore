@@ -4,3 +4,5 @@
 .local/bin/pip3
 .local/bin/pip3.12
 .local/bin/pygmentize
+.local/bin/black
+.local/bin/blackd

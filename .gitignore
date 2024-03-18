@@ -1,1 +1,6 @@
 .config/tmux/plugins/
+.local/bin/markdown-it
+.local/bin/pip
+.local/bin/pip3
+.local/bin/pip3.12
+.local/bin/pygmentize

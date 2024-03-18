@@ -10,5 +10,5 @@ export NVM_DIR=${NVM_DIR:="$XDG_CONFIG_HOME/nvm"}
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 export PASSWORD_STORE_EXTENSIONS_DIR="$(python -m site --user-site)/usr/lib/password-store/extensions/"
 
-export BAT_THEME="Catppuccin-mocha"
+export BAT_THEME="gruvbox-dark"
 

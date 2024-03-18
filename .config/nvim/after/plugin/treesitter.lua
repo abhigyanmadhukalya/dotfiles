@@ -1,11 +1,16 @@
-require('nvim-treesitter.configs').setup {
-    ensure_installed = {
+local status, treesitter = pcall(require, "nvim-treesitter.configs")
+
+treesitter.setup({
+	ensure_installed = {
 		"lua",
 		"python",
 		"c",
-		"cpp"
+		"cpp",
+		"go",
+		"markdown",
+		"markdown_inline",
 	},
-    auto_install = false,
-    highlight = { enable = true },
-    indent = { enable = true },
-}
+	auto_install = false,
+	highlight = { enable = true },
+	indent = { enable = true },
+})

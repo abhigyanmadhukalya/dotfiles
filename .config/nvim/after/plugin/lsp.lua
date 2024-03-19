@@ -39,6 +39,7 @@ require("mason-tool-installer").setup({
 	ensure_installed = {
 		"stylua",
 		"black",
+		"isort",
 	},
 	run_on_start = true,
 	start_delay = 300,

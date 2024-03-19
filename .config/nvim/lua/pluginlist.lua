@@ -63,11 +63,7 @@ return {
 			vim.o.timeout = true
 			vim.o.timeoutlen = 300
 		end,
-		opts = {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-			-- refer to the configuration section below
-		},
+		opts = {},
 	},
 	{
 		"stevearc/conform.nvim",
@@ -115,5 +111,18 @@ return {
 	{
 		"j-hui/fidget.nvim",
 		opts = {},
+	},
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+		opts = {},
+		config = function()
+			vim.keymap.set("n", "<C-n>", "<Cmd>Neotree toggle<CR>", { silent = true, noremap = true })
+		end,
 	},
 }

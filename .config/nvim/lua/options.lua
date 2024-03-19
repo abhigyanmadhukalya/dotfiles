@@ -26,3 +26,8 @@ vim.cmd([[let &t_Cs = "\e[4:0m]"]])
 vim.o.pumblend = 0
 vim.o.winblend = 0
 vim.o.undofile = true
+
+vim.cursorline = true
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.scrolloff = 10

@@ -6,3 +6,4 @@
 .local/bin/pygmentize
 .local/bin/black
 .local/bin/blackd
+.config/nvim/lazy-lock.json

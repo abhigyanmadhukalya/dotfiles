@@ -54,7 +54,10 @@ return {
 	},
 	{
 		"lewis6991/gitsigns.nvim",
-		opts = {},
+		config = function()
+			vim.cmd([[:highlight SignColumn guibg=#282828]])
+			require("gitsigns").setup()
+		end,
 	},
 	{
 		"folke/which-key.nvim",
@@ -123,6 +126,12 @@ return {
 		opts = {},
 		config = function()
 			vim.keymap.set("n", "<C-n>", "<Cmd>Neotree toggle<CR>", { silent = true, noremap = true })
+		end,
+	},
+	{
+		"rcarriga/nvim-notify",
+		config = function()
+			vim.notify = require("notify")
 		end,
 	},
 }

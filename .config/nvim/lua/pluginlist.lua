@@ -1,9 +1,5 @@
 return {
 	{
-		"numToStr/Comment.nvim",
-		opts = {},
-	},
-	{
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		config = function()
@@ -34,6 +30,9 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
 		},
 	},
 	"folke/neodev.nvim",
@@ -83,15 +82,6 @@ return {
 		},
 	},
 	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = true,
-	},
-	{
-		"goolord/alpha-nvim",
-		lazy = true,
-	},
-	{
 		"nvimdev/lspsaga.nvim",
 		opts = {},
 		dependencies = {
@@ -102,14 +92,29 @@ return {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
-		opts = {},
-	},
-	{
-		"folke/todo-comments.nvim",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
+		opts = {
+			exclude = {
+				filetypes = {
+					"help",
+					"alpha",
+					"dashboard",
+					"neotree",
+					"lazy",
+					"mason",
+					"notify",
+					"lazyterm",
+					"toggleterm",
+				},
+			},
 		},
-		opts = { signs = false },
+	},
+	-- {
+	-- 	"goolord/alpha-nvim",
+	-- 	event = "VimEnter",
+	-- },
+	{
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
 	},
 	{
 		"j-hui/fidget.nvim",
@@ -133,5 +138,29 @@ return {
 		config = function()
 			vim.notify = require("notify")
 		end,
+	},
+	{
+		"stevearc/dressing.nvim",
+		opts = {},
+	},
+	{
+		"echasnovski/mini.nvim",
+		version = "*",
+		config = function() end,
+	},
+	{
+		"akinsho/bufferline.nvim",
+		event = "VeryLazy",
+		keys = {
+			{ "<Tab>", "<Cmd>BufferLineCycleNext<CR>", desc = "Next tab" },
+			{ "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", desc = "Prev tab" },
+		},
+		opts = {
+			options = {
+				mode = "tabs",
+				show_buffer_close_icon = false,
+				show_close_icon = false,
+			},
+		},
 	},
 }

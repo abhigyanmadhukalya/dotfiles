@@ -18,13 +18,13 @@
 
 ## Neovim
 
-![nvim](./images/nvim-gruv.png)
+![nvim](./images/nvim-new.png)
 
 Configuration that barely works :)
 
 ## Zsh Shell
 
-![zsh](./images/zsh-gruv.png)
+![zsh](./images/zsh-new.png)
 
 I have switched from Fish to Zsh as it is POSIX compliant and I never run into
 any issues while dealing with shell scripts. All the features that were present

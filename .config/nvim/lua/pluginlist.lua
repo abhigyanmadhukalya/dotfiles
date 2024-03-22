@@ -1,12 +1,20 @@
 return {
+	-- {
+	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("gruvbox").setup({
+	-- 			-- transparent_mode = true,
+	-- 		})
+	-- 		vim.cmd("colorscheme gruvbox")
+	-- 	end,
+	-- },
 	{
-		"ellisonleao/gruvbox.nvim",
+		"catppuccin/nvim",
+		name = "catppuccin",
 		priority = 1000,
 		config = function()
-			require("gruvbox").setup({
-				-- transparent_mode = true,
-			})
-			vim.cmd("colorscheme gruvbox")
+			vim.cmd("colorscheme catppuccin")
 		end,
 	},
 	{
@@ -16,7 +24,7 @@ return {
 		},
 		opts = {
 			icons_enabled = true,
-			theme = "gruvbox",
+			theme = "catppuccin",
 		},
 	},
 	"williamboman/mason.nvim",
@@ -54,7 +62,7 @@ return {
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
-			vim.cmd([[:highlight SignColumn guibg=#282828]])
+			-- vim.cmd([[:highlight SignColumn guibg=#282828]])
 			require("gitsigns").setup()
 		end,
 	},

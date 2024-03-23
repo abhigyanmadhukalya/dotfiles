@@ -1,4 +1,5 @@
 .config/tmux/plugins/
+.config/alacritty/themes
 .local/bin/markdown-it
 .local/bin/pip
 .local/bin/pip3

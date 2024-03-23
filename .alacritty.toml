@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"]
 live_config_reload = true
 
 [colors]
@@ -39,7 +39,6 @@ program = "/usr/bin/zsh"
 
 [window]
 opacity = 1
-decorations = "none"
 
 [window.dimensions]
 columns = 160

@@ -9,14 +9,6 @@ return {
 			vim.cmd("colorscheme gruvbox")
 		end,
 	},
-	-- {
-	-- 	"catppuccin/nvim",
-	-- 	name = "catppuccin",
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.cmd("colorscheme catppuccin")
-	-- 	end,
-	-- },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = {
@@ -86,6 +78,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "black" },
+				sh = { "shellfmt" },
 			},
 		},
 	},
